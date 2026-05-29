@@ -293,6 +293,82 @@ nav a:hover {
 .skill-card:hover {
   transform: scale(1.05);
 }
+/* FORMATION */
+
+.timeline {
+  position: relative;
+  margin-top: 50px;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: rgba(255,255,255,0.15);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -40px;
+  top: 10px;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+  background: linear-gradient(135deg, #5b8cff, #8b5cf6);
+
+  box-shadow: 0 0 20px rgba(91,140,255,0.6);
+}
+
+.timeline-content {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  padding: 25px;
+  border-radius: 20px;
+
+  backdrop-filter: blur(15px);
+
+  transition: 0.3s;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-date {
+  color: #5b8cff;
+  font-size: 0.9rem;
+}
+
+.timeline-content h3 {
+  margin: 15px 0;
+}
+
+.timeline-content p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+.experience-list {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.experience-list li {
+  margin-bottom: 12px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
 
 /* CONTACT */
 

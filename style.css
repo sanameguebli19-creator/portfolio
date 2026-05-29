@@ -331,6 +331,30 @@ button {
 button:hover {
   transform: translateY(-3px);
 }
+footer {
+  padding: 40px 10%;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #cbd5e1;
+  margin-top: 80px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #5b8cff;
+}
 
 /* RESPONSIVE */
 

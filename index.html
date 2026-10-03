@@ -3,347 +3,386 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio 2026</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Sana Meguébili – Développeuse Web &amp; Web Mobile</title>
+  <meta name="description" content="Portfolio de Sana Meguébili, développeuse web et web mobile : projets en HTML, CSS, JavaScript, PHP et MySQL, compétences, formation et contact.">
+  <meta name="theme-color" content="#0b0f19">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sana Meguébili – Développeuse Web &amp; Web Mobile">
+  <meta property="og:description" content="Projets web en HTML, CSS, JavaScript, PHP et MySQL.">
+
+  <!-- Active les animations uniquement si JavaScript fonctionne -->
+  <script>document.documentElement.classList.add('js');</script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Background Blur -->
-  <div class="blur blur1"></div>
-  <div class="blur blur2"></div>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- Fond flou décoratif -->
+  <div class="blur blur1" aria-hidden="true"></div>
+  <div class="blur blur2" aria-hidden="true"></div>
 
   <!-- HEADER -->
   <header>
-    <div class="logo">MEGUEBLI SANA</div>
+    <a class="logo" href="#top">Sana Meguébili</a>
 
-    <nav>
+    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Ouvrir le menu">
+      <span class="menu-bars" aria-hidden="true"></span>
+    </button>
+
+    <nav id="site-nav" aria-label="Navigation principale">
       <a href="#about">À propos</a>
       <a href="#projects">Projets</a>
       <a href="#skills">Compétences</a>
+      <a href="#formation">Formation</a>
+      <a href="#experience">Expérience</a>
       <a href="#contact">Contact</a>
-      <a href="https://github.com/sanameguebli19-creator">
-  GitHub
-</a>
+      <a href="https://github.com/sanameguebli19-creator" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
+  <main id="main">
 
-    <div class="hero-text">
+    <!-- HERO -->
+    <section class="hero" id="top">
 
-      <p class="subtitle">
-        Développeur Web & Web Mobile
-      </p>
-      <p class="description">
-       je suis Meguebli Sana,Passionné par le développement front-end et back-end,
-        je développe des applications rapides, responsive et élégantes.
-      </p>
+      <div class="hero-text">
 
-      <h1>
-        Je crée des expériences web modernes et performantes.
-      </h1>
-
-      <div class="buttons">
-        <a href="assets/CV meguebli.pdf" class="btn secondary" download>
-   Télécharger mon CV
-</a>
-        <a href="#projects" class="btn primary">
-          Voir mes projets
-        </a>
-
-        <a href="#contact" class="btn secondary">
-          Me contacter
-        </a>
-
-      </div>
-
-    </div>
-
-    <div class="hero-card">
-
-      <div class="card-glow"></div>
-
-      <div class="card-content">
-        <h3>Stack</h3>
-
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript</li>
-          <li>PHP / MySQL</li>
-        </ul>
-      </div>
-
-    </div>
-  
-
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
-
-    <h2>À propos</h2>
-
-    <p>
-      Développeur web passionné par la création d’interfaces modernes,
-      fluides et responsive.
-    </p>
-
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-
-    <h2>Mes projets</h2>
-
-    <div class="projects-grid">
-
-      <div class="project-card">
-
-        <div class="project-image">
-            <img src="images/MyEvents.png" alt="MyEvents">
+        <div class="profile-image">
+          <img src="images/img1.jpg" alt="Portrait de Sana Meguébili" width="140" height="140">
         </div>
 
-        <div class="project-content">
+        <p class="subtitle">Développeuse Web &amp; Web Mobile</p>
 
-          <h3>MyEvents</h3>
+        <h1>Je crée des expériences web modernes et performantes.</h1>
+
+        <p class="description">
+          Diplômée en Sciences Informatiques et titulaire du titre professionnel
+          Développeur Web et Web Mobile, je conçois des applications web responsives
+          en HTML, CSS, JavaScript, PHP et MySQL.
+        </p>
+
+        <!-- ✏️ À PERSONNALISER : adapte le poste recherché si besoin -->
+        <p class="status">
+          <span class="status-dot" aria-hidden="true"></span>
+          Je recherche un poste de développeuse web full stack junior.
+        </p>
+
+        <div class="buttons">
+          <a href="#projects" class="btn primary">Voir mes projets</a>
+          <a href="#contact" class="btn secondary">Me contacter</a>
+          <!-- ⚠️ Renomme ton fichier en assets/CV-Sana-Meguebli.pdf (sans espace) -->
+          <a href="assets/CV-Sana-Meguebli.pdf" class="btn secondary" download>Télécharger mon CV</a>
+        </div>
+
+      </div>
+
+      <div class="hero-card">
+        <div class="card-glow" aria-hidden="true"></div>
+        <div class="card-content">
+          <h2 class="card-title">Stack</h2>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>PHP / MySQL</li>
+            <li>Git &amp; GitHub</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="about" class="section">
+      <h2>À propos</h2>
+      <div class="about-text">
+        <p>
+          Diplômée d'une Licence Fondamentale en Sciences Informatiques, j'ai enseigné
+          l'informatique pendant sept ans. Cette expérience m'a appris à expliquer
+          clairement des notions techniques, à m'adapter à mon public et à travailler
+          en autonomie.
+        </p>
+        <p>
+          Je me suis ensuite spécialisée dans le développement web et web mobile :
+          titre professionnel Développeur Web et Web Mobile (niveau 5) et trois projets
+          dynamiques, de l'interface jusqu'à la base de données.
+          Je cherche aujourd'hui mon premier poste de développeuse web.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projects" class="section">
+
+      <h2>Mes projets</h2>
+
+      <div class="projects-grid">
+
+        <!-- Projet 1 : Maison de Mode -->
+        <!-- ✏️ À PERSONNALISER : vérifie le nom du dépôt GitHub et ajoute la capture dans images/ -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="images/MaisonDeMode.png" alt="Capture d'écran du site Maison de Mode" width="600" height="440" loading="lazy">
+          </div>
+          <div class="project-content">
+            <h3>Maison de Mode</h3>
+            <p>
+              Site e-commerce de mode : catalogue de vêtements filtrable par genre et
+              par saison, tri par prix, recherche, favoris et espace client sécurisé.
+            </p>
+            <ul class="project-features">
+              <li>Inscription et connexion (mots de passe hashés, sessions PHP)</li>
+              <li>Espace client : modification du profil, historique des achats</li>
+              <li>Requêtes SQL préparées (PDO) sur une base MySQL</li>
+              <li>Conception UML : diagrammes de classes et de cas d'utilisation</li>
+            </ul>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sanameguebli19-creator/maison-de-mode" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 2 : MyEvents -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="images/MyEvents.png" alt="Capture d'écran de l'application MyEvents" width="600" height="440" loading="lazy">
+          </div>
+          <div class="project-content">
+            <h3>MyEvents</h3>
+            <p>
+              Application web de gestion d'événements : catalogue d'événements,
+              inscription, connexion et participation réellement enregistrée
+              en base de données.
+            </p>
+            <ul class="project-features">
+              <li>Inscription et connexion sécurisées (mots de passe hashés, sessions PHP)</li>
+              <li>Participation à un événement enregistrée en base (table participations)</li>
+              <li>Espace client : historique des événements suivis</li>
+              <li>Base de données relationnelle (utilisateurs, événements, participations) avec PDO</li>
+            </ul>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sanameguebli19-creator/MyEvents" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 3 : Dossier Projet -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="images/dossier-projet.png" alt="Capture d'écran du dossier projet" width="600" height="440" loading="lazy">
+          </div>
+          <div class="project-content">
+            <h3>Dossier Projet</h3>
+            <!-- ✏️ À PERSONNALISER : donne le vrai nom du projet et dis ce qu'il fait -->
+            <p>
+              Projet web développé dans le cadre de ma formation,
+              avec une interface moderne et responsive.
+            </p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sanameguebli19-creator/dossier-projet" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section id="skills" class="section">
+
+      <h2>Compétences</h2>
+
+      <div class="skills-groups">
+
+        <div class="skills-group">
+          <h3>Front-end</h3>
+          <div class="skills-grid">
+            <div class="skill-card reveal">HTML5</div>
+            <div class="skill-card reveal">CSS3</div>
+            <div class="skill-card reveal">JavaScript</div>
+            <div class="skill-card reveal">Responsive design</div>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3>Back-end et données</h3>
+          <div class="skills-grid">
+            <div class="skill-card reveal">PHP</div>
+            <div class="skill-card reveal">MySQL</div>
+            <div class="skill-card reveal">PDO et sessions</div>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3>Outils et conception</h3>
+          <div class="skills-grid">
+            <div class="skill-card reveal">Git &amp; GitHub</div>
+            <div class="skill-card reveal">UML</div>
+            <div class="skill-card reveal">XAMPP</div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FORMATION -->
+    <section id="formation" class="section">
+
+      <h2>Formation</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 - 2026</span>
+            <!-- ✏️ À PERSONNALISER : ajoute le nom de l'organisme de formation -->
+            <h3>Titre professionnel Développeur Web et Web Mobile (niveau 5)</h3>
+            <p>
+              Formation spécialisée en HTML, CSS, JavaScript, PHP et MySQL,
+              avec réalisation de projets web dynamiques.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2011 - 2014</span>
+            <h3>Licence Fondamentale en Sciences Informatiques (niveau 6)</h3>
+            <p>
+              Formation universitaire en informatique : programmation, bases de données,
+              développement web, algorithmes et systèmes informatiques.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- EXPÉRIENCE -->
+    <section id="experience" class="section">
+
+      <h2>Expérience professionnelle</h2>
+
+      <div class="experience-grid">
+
+        <div class="experience-card">
+
+          <span class="timeline-date">2015 - 2022</span>
+          <h3>Enseignante en informatique</h3>
 
           <p>
-            Application web de gestion d’événements développée en HTML,
-            CSS, JavaScript et PHP.
+            Enseignement de l'informatique et accompagnement pédagogique autour
+            des outils numériques. J'en retiens l'habitude d'expliquer clairement
+            des notions techniques et de m'adapter à mon public.
           </p>
 
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>PHP</span>
-          </div>
-
-          <div class="project-links">
-
-            <a href="https://github.com/sanameguebli19-creator/MyEvents"
-               target="_blank">
-               GitHub
-            </a>
-
-          </div>
+          <ul class="experience-list">
+            <li>Utilisation de logiciels bureautiques</li>
+            <li>Gestion de bases de données</li>
+            <li>Création multimédia : son, image et vidéo</li>
+            <li>Création de pages web</li>
+            <li>Maintenance et dépannage informatique</li>
+            <li>Installation de systèmes d'exploitation et de logiciels</li>
+            <li>Sécurité informatique</li>
+          </ul>
 
         </div>
 
       </div>
-      <div class="project-card">
 
-  <div class="project-image">
-    <img src="images/dossier-projet.png" alt="Dossier Projet">
-  </div>
+    </section>
 
-  <div class="project-content">
+    <!-- CONTACT -->
+    <section id="contact" class="section">
 
-    <h3>Dossier Projet</h3>
+      <h2>Contact</h2>
 
-    <p>
-      Projet web développé dans le cadre de ma formation,
-      avec une interface moderne et responsive.
-    </p>
+      <div class="contact-layout">
 
-    <div class="tags">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>PHP</span>
-    </div>
+        <div class="contact-info">
+          <p>
+            Une opportunité, une question, un projet ? Écrivez-moi, je réponds rapidement.
+          </p>
+          <ul class="contact-list">
+            <!-- ✏️ À PERSONNALISER : remplace par ton adresse email (2 endroits) -->
+            <li><a href="mailto:ton.email@exemple.com">ton.email@exemple.com</a></li>
+            <li><a href="https://www.linkedin.com/in/sana-meguebli" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/sanameguebli19-creator" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
 
-    <div class="project-links">
+        <form id="contact-form" action="https://formspree.io/f/maqkkndz" method="POST">
 
-      <a href="https://github.com/sanameguebli19-creator/dossier-projet"
-         target="_blank">
-         GitHub
-      </a>
+          <div class="field">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
 
-    </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
 
-  </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
 
-</div>
+          <!-- Champ piège anti-spam : doit rester vide -->
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
-    </div>
+          <button type="submit" class="btn primary">Envoyer le message</button>
 
-  </section>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section">
-
-    <h2>Compétences</h2>
-
-    <div class="skills-grid">
-
-      <div class="skill-card">HTML5</div>
-      <div class="skill-card">CSS3</div>
-      <div class="skill-card">JavaScript</div>
-      <div class="skill-card">PHP</div>
-      <div class="skill-card">MySQL</div>
-
-    </div>
-
-  </section>
- <section id="formation" class="section">
-
-  <h2>Formation</h2>
-
-  <div class="timeline">
-
-    <div class="timeline-item">
-
-      <div class="timeline-dot"></div>
-
-
-      <div class="timeline-content">
-       
-
-        <span class="timeline-date">
-              2011 - 2014
-          
-        </span>
-
-        <h3>
-          Licence Fondamentale en Sciences Informatiques
-        </h3>
-
-        <p>
-          Formation universitaire en informatique :
-          programmation, bases de données, développement web,
-          algorithmes et systèmes informatiques.
-        </p>
+        </form>
 
       </div>
 
-    </div>
+    </section>
 
-    <div class="timeline-item">
+  </main>
 
-      <div class="timeline-dot"></div>
-
-      <div class="timeline-content">
-
-        <span class="timeline-date">
-          2025 - 2026
-        </span>
-
-        <h3>
-          Développeuse Web & Web Mobile
-        </h3>
-
-        <p>
-          Formation spécialisée en HTML, CSS, JavaScript,
-          PHP et MySQL avec réalisation de projets web modernes.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-<section id="experience" class="section">
-
-  <h2>Expériences Professionnelles</h2>
-
-  <div class="experience-grid">
-
-    <div class="experience-card">
-
-      <h3>Enseignante en Informatique</h3>
-
-      <span>2015 - 2022</span>
-
-      <p>
-        Expérience dans l’enseignement de l’informatique
-        et l’accompagnement pédagogique autour des outils numériques.
-      </p>
-
-      <ul class="experience-list">
-
-        <li>Utilisation de logiciels bureautiques</li>
-
-        <li>Gestion de bases de données</li>
-
-        <li>Création multimédia : son, image et vidéo</li>
-
-        <li>Création de pages web</li>
-
-        <li>Maintenance et dépannage informatique</li>
-
-        <li>Installation de systèmes d’exploitation et logiciels</li>
-
-        <li>Sécurité informatique</li>
-
-      </ul>
-
-    </div>
-
-  </div>
-
-</section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-
-    <h2>Contact</h2>
-<form action="https://formspree.io/f/maqkkndz"
-      method="POST">
-
-  <input type="text"
-         name="name"
-         placeholder="Nom"
-         required>
-
-  <input type="email"
-         name="email"
-         placeholder="Email"
-         required>
-
-  <textarea name="message"
-            placeholder="Votre message"
-            required></textarea>
-
-  <button type="submit">
-    Envoyer
-  </button>
-
-</form>
-
-  </section>
   <footer>
-  <p>© 2026 Sana Meguébili - Développeuse Web</p>
-</footer>
+    <p>© 2026 Sana Meguébili • Développeuse Web &amp; Web Mobile</p>
+
+    <div class="footer-links">
+      <a href="https://github.com/sanameguebli19-creator" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/sana-meguebli" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
-  <footer>
-
-  <p>
-    © 2026 Sana Meguébili • Développeuse Web & Web Mobile
-  </p>
-
-  <div class="footer-links">
-
-    <a href="https://github.com/sanameguebli19-creator">
-      GitHub
-    </a>
-    <a href="https://www.linkedin.com/in/sana-meguebli"
-       target="_blank">
-       LinkedIn
-    </a>
-
-  </div>
-
-</footer>
-
 </body>
 </html>
